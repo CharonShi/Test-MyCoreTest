@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0031)https://www.youzhan.org/page/9/ -->
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>便捷图片仓</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--网站图标-->
+    <link rel="shortcut icon" href="https://www.youzhan.org/assets/img/favicon.png" type="image/png">
+    <!-- Icons -->
+    <!-- Argon CSS -->
+    <link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="/bootstrap-3.3.7/css/style.min.css" rel="stylesheet">
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="/js/BaseApi.js"></script>
+</head>
+
+<body>
+    <style>
+        .navbar {
+            padding: 0;
+            font-size: 18px;
+            padding-top: 3px;
+        }
+
+        .navbar {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: .5rem 1rem;
+        }
+
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-brand {
+            padding: 5px 20px;
+            padding-left: 25px;
+            text-align: center;
+            transition: all 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
+            color: #00B4AC;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            display: inline-block;
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            line-height: inherit;
+            white-space: nowrap;
+        }
+
+        a {
+            color: #00B4AC;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
+
+        a {
+            color: #00B4AC;
+        }
+
+        .navbar-toggler:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+
+        [type=reset], [type=submit], button, html [type=button] {
+            -webkit-appearance: button;
+        }
+
+        .navbar-toggler {
+            padding: .25rem .75rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+        }
+
+        button, select {
+            text-transform: none;
+        }
+
+        button, input {
+            overflow: visible;
+        }
+
+        button, input, optgroup, select, textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-collapse {
+            -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .navbar-brand img.logo {
+            /*width: 160px;*/
+            margin-right: 10px;
+        }
+
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+
+        .navbar-toggler-icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            content: "";
+            background: no-repeat center center;
+            background-size: 100% 100%;
+        }
+
+        .btn:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        }
+
+        .btn-closemenu {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 20px 26px;
+            color: rgba(38,44,51,0.4);
+            display: none;
+        }
+
+        .btn {
+            transition: all 0.2s linear;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            padding: 16px 32px;
+            font-size: 14px;
+            line-height: 1em;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-nav--center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            justify-content: center;
+            align-items: center;
+            flex: 1 0 auto;
+        }
+
+        .navbar-nav--center {
+            transition: all 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+        .navbar-nav {
+            transition: all 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
+            padding: 0;
+        }
+
+        .navbar-nav {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+        }
+
+        .navbar-nav--right {
+            position: absolute;
+            right: 0;
+        }
+
+        .navbar-nav--right {
+            padding-right: 25px;
+            align-items: center;
+        }
+
+        .navbar-nav {
+            transition: all 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
+            padding: 0;
+        }
+
+        .navbar-nav {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+        }
+    </style>
+
+    <main>
+        <section class="section-shaped my-0 bg-center bg-cover h-120">
+
+
+            <nav class="navbar navbar-expand-lg" style="width:1400px;margin: 0 auto;">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" style="display:inline-block;" src="https://www.youzhan.org/assets/img/favicon.png" alt="logo">
+                    <span>便捷图片仓</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a href="#" class="btn btn-closemenu">
+                        <i class="gbicon-x"></i>
+                    </a>
+
+                    <ul class="navbar-nav navbar-nav--right">
+
+                        <li class="nav-item" style="margin: 10px 0">
+                            <img src="https://www.youzhan.org/assets/img/favicon.png" />
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" style="color:aliceblue;" href="#">
+                                <span style="font-size: 15px; font-weight: 400;color: #fff;">爱吃鲸的虾</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Circles background -->
+            <div class="shape shape-style-1 shape-primary alpha-4">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- SVG separator -->
+            <div class="separator separator-bottom separator-skew z-0">
+                <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="section -mt-64">
+
+            <div class="login">
+
+                <div class="jumbotron">
+                    <h1>Welcome PictrueCabin</h1>
+                    <div>
+                        <div class="input-group-lg" style="margin-top:20px;">
+                            <input type="text" class="form-control" id="Account" placeholder="Username" aria-describedby="sizing-addon1" style="width:60%;">
+                        </div>
+                        <div class="input-group-lg" style="margin-top:20px;margin-bottom:20px;">
+                            <input type="text" class="form-control" id="Pasword" placeholder="Password" aria-describedby="sizing-addon1" style="width:60%;">
+                            <p style="font-size:14px;">忘记密码?</p>
+                        </div>
+                    </div>
+                    <p>
+                        <a class="btn btn-primary btn-lg" href="javascript:;" onclick="Login()" role="button" style="width: 100px; height: 40px; line-height: 30px; font-size: 16px;">Login</a>
+                        <span style="font-size:14px;">注册</span>
+                    </p>
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+    <style>
+        .login {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+            .login > div {
+                border-radius: 10px;
+                opacity: 0.8;
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+    </style>
+
+    <script>
+
+
+        function Login() {
+
+            var account = $("#Account").val();
+            var pasword = $("#Pasword").val();
+
+            if (IsNullOrEmpty(account)) {
+                console.log(account);
+                return;
+            }
+
+            if (IsNullOrEmpty(pasword)) {
+                console.log(pasword);
+                return;
+            }
+
+
+            console.log(account);
+            console.log(pasword);
+
+
+            BaseApi.ajax({
+                url: "/api/Login/Login",
+                type: "post",
+                data: { UserName: account, Password: pasword },
+                success: function (res) {
+
+                    console.log(res);
+                    if (res.code == 1) {
+                        setCookie("ShiToken", res.data);
+                        location.href = "../index.html";
+                    }
+
+                }
+            })
+        }
+
+
+        $(function () {
+
+        });
+
+
+    </script>
+
+</body>
+</html>

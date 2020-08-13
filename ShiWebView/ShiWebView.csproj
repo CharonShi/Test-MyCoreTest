@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Html\index.html" />
+    <Content Remove="wwwroot\Image\tiem.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\ar.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\az.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\bg.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\ca.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\cr.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\cs.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\da.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\de.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\el.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\es.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\et.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\fa.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\fi.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\fr.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\gl.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\he.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\hu.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\id.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\it.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\ja.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\ka.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\kr.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\kz.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\LANG.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\lt.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\nl.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\no.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\pl.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\pt-BR.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\pt.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\ro.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\ru.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\sk.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\sl.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\sv.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\th.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\tr.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\uk.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\uz.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\vi.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\zh-TW.js" />
+    <None Include="wwwroot\bootstrap-3.3.7\fileinput\js\locales\zh.js" />
+    <None Include="wwwroot\Image\tiem.png" />
+    <None Include="wwwroot\index.html" />
+  </ItemGroup>
+
+</Project>
