@@ -18,7 +18,7 @@ namespace Shi.Service
             };
 
             var list = DbBase.GetPager<userpic>(pIndx, pSize).rowData.ToList();
-            var llist = DbBase.GetList<picture>("select * from picture where 1=1");
+            var llist = DbBase.GetPager<picture>("picture",pred);
 
             var ids = from p in list select p.PicId;
             var ids_ = string.Join(',', ids);

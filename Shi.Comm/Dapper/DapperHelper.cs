@@ -238,6 +238,18 @@ namespace CommonHelper
             return Connection.Connection.Query<T>(sql, param, transaction, buffered, commandTimeout, commandType).AsList();
         }
         /// <summary>
+        /// 执行查询
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="sql">sql字符串</param>
+        /// <param name="param">参数</param>
+        /// <returns></returns>
+        public dynamic QueryFirst(string sql, object param = null) 
+        {
+            return Connection.Connection.QueryFirst(sql, param);
+        }
+
+        /// <summary>
         /// 参数化SQL执行
         /// </summary>
         /// <typeparam name="T">实体（表名）</typeparam>

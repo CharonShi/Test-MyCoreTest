@@ -185,6 +185,33 @@ namespace Shi.Repository.Base
             return pager;
         }
 
+        public PagerObj<TEntity> GetPager<TEntity>(string TabName, object Param, string StorName = "", string ColField = "") where TEntity : class
+        {
+            var sql = "select ";
+
+            if (!string.IsNullOrWhiteSpace(ColField))
+            {
+                sql += ColField;
+            }
+            else
+            {
+                sql += "*";
+            }
+
+            sql += " where 1=1";
+
+            if (!string.IsNullOrWhiteSpace(StorName))
+            {
+                sql += StorName;
+            }
+
+            var sqlCount = $"select count(*) from {TabName} where 1=1 ";
+            var page = new PagerObj<TEntity>();
+            page.rowData = Dapper.Query<TEntity>(sql, Param);
+            page.rowTotal = Dapper.QueryFirst(sqlCount, Param);
+
+            return page;
+        }
 
 
         #endregion
