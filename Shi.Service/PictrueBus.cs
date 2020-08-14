@@ -17,7 +17,8 @@ namespace Shi.Service
                 UserId = userId
             };
 
-            var list = DbBase.GetPager<userpic>(pIndx, pSize, "PicId", false, pred).rowData.ToList();
+            var list = DbBase.GetPager<userpic>(pIndx, pSize).rowData.ToList();
+            var llist = DbBase.GetList<picture>("select * from picture where 1=1");
 
             var ids = from p in list select p.PicId;
             var ids_ = string.Join(',', ids);
@@ -30,6 +31,10 @@ namespace Shi.Service
             return null;
         }
 
+        public static void InsertPicture(picture[] pic)
+        {
+            DbBase.Insert<picture>(pic);
+        }
 
 
     }

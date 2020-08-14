@@ -53,14 +53,14 @@ namespace Shi.Models.DBModel
            /// Default:
            /// Nullable:False
            /// </summary>           
-           public int PicSize {get;set;}
+           public long PicSize {get;set;}
 
            /// <summary>
            /// Desc:图片类型
            /// Default:
            /// Nullable:False
            /// </summary>           
-           public string PicType {get;set;}
+           public int PicType {get;set;}
 
            /// <summary>
            /// Desc:图片地址

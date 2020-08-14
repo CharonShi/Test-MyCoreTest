@@ -26,7 +26,7 @@ namespace Shi.App
 
 
 
-            new Thread(new ThreadStart(ShowNowStatu)).Start();
+            //new Thread(new ThreadStart(ShowNowStatu)).Start();
 
 
 
