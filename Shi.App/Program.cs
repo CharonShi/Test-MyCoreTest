@@ -28,7 +28,8 @@ namespace Shi.App
 
             //new Thread(new ThreadStart(ShowNowStatu)).Start();
 
-
+            var shijizhi = Convert.ToInt32(Console.ReadLine());
+            erjinzhi(shijizhi);
 
             Console.ReadKey();
 
@@ -243,6 +244,31 @@ namespace Shi.App
             PerformanceCounter[] DiskPerform = perform.GetCounters(dName[0]);
             return DiskPerform[20];
         }
+
+
+
+
+        #endregion
+
+
+        #region 二进制
+
+
+
+        public static int erjinzhi(int shijinzhi)
+        {
+
+            var a = shijinzhi % 2;
+            var b = shijinzhi / 2;
+            if (b <= 0)
+            {
+                Console.Write(a);
+                return 0;
+            }
+            Console.Write(a);
+            return erjinzhi(b);
+        }
+
 
 
 

@@ -35,3 +35,4 @@ E:\Hi\MyCore\ShiWebView\obj\Debug\netcoreapp3.1\ShiWebView.dll
 E:\Hi\MyCore\ShiWebView\obj\Debug\netcoreapp3.1\ShiWebView.pdb
 E:\Hi\MyCore\ShiWebView\obj\Debug\netcoreapp3.1\ShiWebView.genruntimeconfig.cache
 E:\Hi\MyCore\ShiWebView\obj\Debug\netcoreapp3.1\ShiWebView.csproj.CopyComplete
+E:\Hi\MyCore\ShiWebView\bin\Debug\netcoreapp3.1\web.config
