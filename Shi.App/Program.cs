@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -28,8 +30,118 @@ namespace Shi.App
 
             //new Thread(new ThreadStart(ShowNowStatu)).Start();
 
-            var shijizhi = Convert.ToInt32(Console.ReadLine());
-            erjinzhi(shijizhi);
+
+            Console.WriteLine("请选择要使用的功能:");
+            Console.WriteLine("1、二进制转十进制");
+            Console.WriteLine("2、十进制转二进制");
+            Console.WriteLine("3、二进制转八进制");
+            Console.WriteLine("4、八进制转二进制");
+            Console.WriteLine("5、十进制转八进制");
+            Console.WriteLine("6、八进制转十进制");
+            Console.WriteLine("7、二进制转十六进制");
+            Console.WriteLine("8、十六进制转二进制");
+            Console.WriteLine("-------------------------------");
+            var states = Convert.ToInt32(Console.ReadLine());
+
+            switch (states)
+            {
+                case 1:
+                    while (true)
+                    {
+                        Console.Write("请输入一个二进制数：");
+                        var erjinzhi = Console.ReadLine();
+                        erzhuanshi(erjinzhi);
+                    }
+                    break;
+                case 2:
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个十进制数：");
+                        var shijizhi = Convert.ToInt32(Console.ReadLine());
+                        shizhuaner(shijizhi);
+                        Console.Write(" 从右往左读");
+                        Console.WriteLine();
+                    }
+                    break;
+                case 3:
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个二进制数：");
+                        var shijizhi = Console.ReadLine();
+                        erzhuanba(shijizhi);
+                        Console.WriteLine();
+                    }
+                    break;
+                case 4:
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个八进制数：");
+                        var bajinzhi = Console.ReadLine();
+                        bazhuaner(bajinzhi);
+                        Console.WriteLine();
+                    }
+                    break;
+                case 5:
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个十进制数：");
+                        var shijinzhi = Console.ReadLine();
+                        shizhuanba(shijinzhi);
+                        Console.WriteLine();
+                    }
+                    break;
+                case 6:
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个八进制数：");
+                        var bajinzhi = Console.ReadLine();
+                        bazhuanshi(bajinzhi);
+                        Console.WriteLine();
+                    }
+                    break;
+                case 7:
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个二进制数：");
+                        var erjinzhi = Console.ReadLine();
+                        erzhuanshiliu(erjinzhi);
+                        Console.WriteLine();
+                    }
+                    break;
+                case 8:
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个十六进制数：");
+                        var erjinzhi = Console.ReadLine();
+                        erzhuanshiliu(erjinzhi);
+                        Console.WriteLine();
+                    }
+                    break;
+                default:
+                    Console.Write("结束");
+                    break;
+            }
+
+
+
+
+
+
+
+
+            //while (true)
+            //{
+            //    var erjinzhi = Console.ReadLine();
+            //    erzhuanshi(erjinzhi);
+            //}
+
 
             Console.ReadKey();
 
@@ -160,7 +272,11 @@ namespace Shi.App
 
         #region 递归练习
 
-
+        /// <summary>
+        /// 未完成
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public static int pow1(int n)
         {
             if (n <= 2)
@@ -251,25 +367,291 @@ namespace Shi.App
         #endregion
 
 
-        #region 二进制
+        #region 进制转换
 
+        #region 十&二
 
-
-        public static int erjinzhi(int shijinzhi)
+        /// <summary>
+        /// 十进制转二进制
+        /// </summary>
+        /// <param name="shijinzhi">十进制数</param>
+        /// <returns></returns>
+        public static int shizhuaner(int shijinzhi)
         {
 
-            var a = shijinzhi % 2;
-            var b = shijinzhi / 2;
+            var a = shijinzhi % 2; // 模，取余数
+            var b = shijinzhi / 2; // 除，取剩余数
             if (b <= 0)
             {
                 Console.Write(a);
                 return 0;
             }
             Console.Write(a);
-            return erjinzhi(b);
+
+            return shizhuaner(b);
+        }
+
+        /// <summary>
+        /// 二进制转十进制
+        /// </summary>
+        /// <param name="erjinzhi">二进制数</param>
+        public static void erzhuanshi(string erjinzhi)
+        {
+            //字符串顺序翻转
+            //var arr = erjinzhi.ToCharArray();
+            //Array.Reverse(arr);
+            //var str = new string(arr);
+
+            double result = 0;
+
+            for (int i = 0, j = erjinzhi.Length - 1; i < erjinzhi.Length; i++, j--)
+            {
+                var erjin = Convert.ToInt32(erjinzhi[j].ToString()); // 单个数字
+                var rrr = Math.Pow(2, i);  // 2取j次方
+                result += erjin * rrr;
+            }
+
+            Console.WriteLine(result);
+        }
+
+        #endregion
+
+
+
+        #region 八&二
+
+        /// <summary>
+        /// 二进制转八进制
+        /// ************
+        /// 将二进制数从右往左读，每三个一组，最后一组若是不足三个数，则补零至三个数
+        /// 每组从右往左计算，如：100，计算为 1*2^2 + 0*2^1 + 0*2^0 
+        /// 每组计算的结果拼在一起（不相加），则得到8进驻数
+        /// ************
+        /// </summary>
+        /// <param name="erjinzhi"></param>
+        public static void erzhuanba(string erjinzhi)
+        {
+            List<string> arr = new List<string>();
+
+            string a = "";
+            for (int i = erjinzhi.Length - 1, j = 0; i >= 0; i--, j++)
+            {
+                a += erjinzhi[i].ToString();
+                if ((j + 1) % 3 == 0)
+                {
+                    //var arara = a.ToCharArray();
+                    //var aasw = arara.Reverse();
+                    //a = string.Join(null, aasw);
+                    arr.Add(a);
+                    a = "";
+                }
+            }
+            if (!string.IsNullOrWhiteSpace(a))
+            {
+                //var arara = a.ToCharArray();
+                //var aasw = arara.Reverse();
+                //a = string.Join(null, aasw);
+                a = a.PadRight(3, '0');
+                arr.Add(a);
+            }
+
+            var result = "";
+            foreach (var item in arr)
+            {
+                var ara = item.ToArray();
+
+                double mark = 0;
+                for (int i = 0; i < ara.Length; i++)
+                {
+                    mark += Convert.ToInt32(ara[i].ToString()) * Math.Pow(2, i);
+                }
+                result = mark + result;
+            }
+
+            Console.WriteLine($"二进制转八进制结果：{result}");
+        }
+
+        /// <summary>
+        /// 八进制转二进制
+        /// ************
+        /// 将八进制数的每个数字拿出来，进行除二取余法，将得到的余数拼起来，不足三个数补零至三个数
+        /// 最后把每个数字得到的二进制结果拼在一起，得到完整二进制数
+        /// 二进制数最前面的0没有意义，可以去除
+        /// ************
+        /// </summary>
+        /// <param name="bajinzhi"></param>
+        public static void bazhuaner(string bajinzhi)
+        {
+
+            var arr = bajinzhi.ToArray();
+
+            var result = "";
+            for (int i = 0; i < arr.Length; i++)
+            {
+                var rer = "";
+                var mark = Convert.ToInt32(arr[i].ToString());
+
+                while (mark > 0) // 被除数小于等于0，跳出循环
+                {
+                    var aa = mark % 2;  // 取余
+                    mark = mark / 2;  //取相除的结果，做下次循环的被除数
+                    rer = aa + rer; // 拼接此次循环的二进制结果
+                }
+
+                if (rer.Length < 3) // 不足三个数字补零
+                {
+                    rer = rer.PadLeft(3, '0');
+                }
+
+                result += rer; // 最后得到的二进制数
+            }
+
+            while (result.StartsWith('0'))
+            {
+                result = result.Remove(0, 1);
+            }
+
+            Console.WriteLine($"八进制转二进制结果为：{result}");
         }
 
 
+        #endregion
+
+
+
+        #region 十六&二
+
+
+        /// <summary>
+        /// 二进制转十六进制
+        /// *************
+        /// 将二进制数从右往左开始，每四个一组，不足四个补零至4个数
+        /// 每一组数从右往左开始，乘以2的下标次方，累计这组数的和，如
+        /// 二进制数 10010110，分组得 1001、0110 ， 计算 1*2^3 + 0*2^2 + 0*2^1 + 1*2^0  、 0*2^3 + 1*2^2 + 1*2^1 + 0*2^0 
+        /// 最后拼接每组的结果就是16进制数， 96 
+        /// 十六进制的 10--15 用ABCDEF来表示
+        /// *************
+        /// </summary>
+        /// <param name="erjinzhi"></param>
+        public static void erzhuanshiliu(string erjinzhi)
+        {
+
+            List<string> fire = new List<string>();
+            var result = "";
+
+            var arr = erjinzhi.ToArray();
+
+            var a = "";
+            for (int i = arr.Length - 1, j = 0; i >= 0; i--, j++)
+            {
+                a += arr[i].ToString();
+                if ((j + 1) % 4 == 0) // 每四个一组
+                {
+                    fire.Add(a);
+                    a = "";
+                }
+            }
+            if (!string.IsNullOrWhiteSpace(a)) //不足4个数补零
+            {
+                a = a.PadRight(4, '0');
+                fire.Add(a);
+            }
+
+            foreach (var item in fire)
+            {
+                var aa = item.ToString();
+
+                double mark = 0;
+                for (int i = 0; i < aa.Length; i++)
+                {
+                    mark += Convert.ToInt32(aa[i].ToString()) * Math.Pow(2, i);
+                }
+
+                result = shiliu(mark) + result;
+            }
+            Console.WriteLine($"二进制转十六进制结果为：{result}");
+        }
+
+
+
+
+
+
+        /// <summary>
+        /// 十六进制10--15项的字母
+        /// </summary>
+        /// <param name="shil"></param>
+        /// <returns></returns>
+        public static string shiliu(double shil)
+        {
+            switch (shil)
+            {
+                case 10: return "A";
+                case 11: return "B";
+                case 12: return "C";
+                case 13: return "D";
+                case 14: return "E";
+                case 15: return "F";
+                default: return shil.ToString();
+            }
+        }
+
+        #endregion
+
+
+
+        #region 十&八
+
+        /// <summary>
+        /// 十进制转八进制
+        /// *********
+        /// 通过除8取余法，将得到的余数从后往前拼起来，得到八进制数
+        /// 
+        /// *********
+        /// </summary>
+        /// <param name="shijinzhi"></param>
+        public static void shizhuanba(string shijinzhi)
+        {
+            var result = "";
+            var mark = Convert.ToInt32(shijinzhi);
+
+            while (mark > 0)
+            {
+                var yu = mark % 8;
+                mark = mark / 8;
+                result = yu + result;
+            }
+
+            Console.WriteLine($"十进制转换八进制的结果为：{result}");
+        }
+
+
+        /// <summary>
+        /// 八进制转十进制
+        /// ***********
+        /// 将八进制数的每个数字拿出，从右往左开始，当前数字乘以8的下标，如：
+        /// 把八进制数 226，得到 2*8^2 + 2*8^1 + 6*8^0 
+        /// 最后得到的十进制数结果
+        /// ***********
+        /// </summary>
+        /// <param name="bajinzhi"></param>
+        public static void bazhuanshi(string bajinzhi)
+        {
+
+            double result = 0;
+            var arr = bajinzhi.ToArray();
+
+            for (int i = arr.Length - 1, j = 0; i >= 0; i--, j++)
+            {
+                var a = Convert.ToInt32(arr[i].ToString());
+                var bb = a * Math.Pow(8, j);
+                result += bb;
+            }
+
+            Console.WriteLine($"八进制转换十进制的结果为：{result}");
+        }
+
+        #endregion
 
 
 

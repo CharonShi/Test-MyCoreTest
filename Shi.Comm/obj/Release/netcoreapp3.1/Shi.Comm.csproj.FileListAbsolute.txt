@@ -1,0 +1,9 @@
+E:\Hi\MyCore\Shi.Comm\bin\Release\netcoreapp3.1\Shi.Comm.deps.json
+E:\Hi\MyCore\Shi.Comm\bin\Release\netcoreapp3.1\Shi.Comm.dll
+E:\Hi\MyCore\Shi.Comm\bin\Release\netcoreapp3.1\Shi.Comm.pdb
+E:\Hi\MyCore\Shi.Comm\obj\Release\netcoreapp3.1\Shi.Comm.csprojAssemblyReference.cache
+E:\Hi\MyCore\Shi.Comm\obj\Release\netcoreapp3.1\Shi.Comm.AssemblyInfoInputs.cache
+E:\Hi\MyCore\Shi.Comm\obj\Release\netcoreapp3.1\Shi.Comm.AssemblyInfo.cs
+E:\Hi\MyCore\Shi.Comm\obj\Release\netcoreapp3.1\Shi.Comm.csproj.CoreCompileInputs.cache
+E:\Hi\MyCore\Shi.Comm\obj\Release\netcoreapp3.1\Shi.Comm.dll
+E:\Hi\MyCore\Shi.Comm\obj\Release\netcoreapp3.1\Shi.Comm.pdb
