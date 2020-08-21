@@ -67,7 +67,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Font", "Font", "{9872B66C-8
 		..\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.woff2 = ..\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.woff2
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiWebView", "ShiWebView\ShiWebView.csproj", "{5508523D-0D1D-4AF2-B02A-580203CF4409}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShiWebView", "ShiWebView\ShiWebView.csproj", "{5508523D-0D1D-4AF2-B02A-580203CF4409}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MySetup", "MySetup\MySetup.vdproj", "{3E3CEEC3-6D15-4C9E-9448-115E33E4F96A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shi.WinFrom", "Shi.WinFrom\Shi.WinFrom.csproj", "{B37E8187-9179-40E0-8A41-B3E48D92DDF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +119,12 @@ Global
 		{5508523D-0D1D-4AF2-B02A-580203CF4409}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5508523D-0D1D-4AF2-B02A-580203CF4409}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5508523D-0D1D-4AF2-B02A-580203CF4409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E3CEEC3-6D15-4C9E-9448-115E33E4F96A}.Debug|Any CPU.ActiveCfg = Debug
+		{3E3CEEC3-6D15-4C9E-9448-115E33E4F96A}.Release|Any CPU.ActiveCfg = Release
+		{B37E8187-9179-40E0-8A41-B3E48D92DDF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B37E8187-9179-40E0-8A41-B3E48D92DDF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B37E8187-9179-40E0-8A41-B3E48D92DDF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B37E8187-9179-40E0-8A41-B3E48D92DDF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,6 +145,7 @@ Global
 		{8D96864C-59EF-4097-BDEC-0457013B2EF3} = {07D65F5C-9AD1-413B-923C-22AC28450059}
 		{9872B66C-8EBE-4374-8C64-59D924A3A0F7} = {07D65F5C-9AD1-413B-923C-22AC28450059}
 		{5508523D-0D1D-4AF2-B02A-580203CF4409} = {CFB08CC9-EB31-4CA9-83F8-2B114CE74A0C}
+		{B37E8187-9179-40E0-8A41-B3E48D92DDF1} = {D2FB10C6-BAC4-4215-9826-A6556BFEA811}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB44CA8B-9AA4-4B05-B214-A4512D5E82AF}

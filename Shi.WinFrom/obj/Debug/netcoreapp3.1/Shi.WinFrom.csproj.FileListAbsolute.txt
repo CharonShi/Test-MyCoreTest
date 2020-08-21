@@ -1,0 +1,15 @@
+E:\Hi\MyCore\Shi.WinFrom\bin\Debug\netcoreapp3.1\Shi.WinFrom.exe
+E:\Hi\MyCore\Shi.WinFrom\bin\Debug\netcoreapp3.1\Shi.WinFrom.deps.json
+E:\Hi\MyCore\Shi.WinFrom\bin\Debug\netcoreapp3.1\Shi.WinFrom.runtimeconfig.json
+E:\Hi\MyCore\Shi.WinFrom\bin\Debug\netcoreapp3.1\Shi.WinFrom.runtimeconfig.dev.json
+E:\Hi\MyCore\Shi.WinFrom\bin\Debug\netcoreapp3.1\Shi.WinFrom.dll
+E:\Hi\MyCore\Shi.WinFrom\bin\Debug\netcoreapp3.1\Shi.WinFrom.pdb
+E:\Hi\MyCore\Shi.WinFrom\obj\Debug\netcoreapp3.1\Shi.WinFrom.csprojAssemblyReference.cache
+E:\Hi\MyCore\Shi.WinFrom\obj\Debug\netcoreapp3.1\Shi.WinFrom.Form1.resources
+E:\Hi\MyCore\Shi.WinFrom\obj\Debug\netcoreapp3.1\Shi.WinFrom.csproj.GenerateResource.cache
+E:\Hi\MyCore\Shi.WinFrom\obj\Debug\netcoreapp3.1\Shi.WinFrom.AssemblyInfoInputs.cache
+E:\Hi\MyCore\Shi.WinFrom\obj\Debug\netcoreapp3.1\Shi.WinFrom.AssemblyInfo.cs
+E:\Hi\MyCore\Shi.WinFrom\obj\Debug\netcoreapp3.1\Shi.WinFrom.csproj.CoreCompileInputs.cache
+E:\Hi\MyCore\Shi.WinFrom\obj\Debug\netcoreapp3.1\Shi.WinFrom.dll
+E:\Hi\MyCore\Shi.WinFrom\obj\Debug\netcoreapp3.1\Shi.WinFrom.pdb
+E:\Hi\MyCore\Shi.WinFrom\obj\Debug\netcoreapp3.1\Shi.WinFrom.genruntimeconfig.cache

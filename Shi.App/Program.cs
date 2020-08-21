@@ -31,106 +31,8 @@ namespace Shi.App
             //new Thread(new ThreadStart(ShowNowStatu)).Start();
 
 
-            Console.WriteLine("请选择要使用的功能:");
-            Console.WriteLine("1、二进制转十进制");
-            Console.WriteLine("2、十进制转二进制");
-            Console.WriteLine("3、二进制转八进制");
-            Console.WriteLine("4、八进制转二进制");
-            Console.WriteLine("5、十进制转八进制");
-            Console.WriteLine("6、八进制转十进制");
-            Console.WriteLine("7、二进制转十六进制");
-            Console.WriteLine("8、十六进制转二进制");
-            Console.WriteLine("-------------------------------");
-            var states = Convert.ToInt32(Console.ReadLine());
 
-            switch (states)
-            {
-                case 1:
-                    while (true)
-                    {
-                        Console.Write("请输入一个二进制数：");
-                        var erjinzhi = Console.ReadLine();
-                        erzhuanshi(erjinzhi);
-                    }
-                    break;
-                case 2:
-
-                    while (true)
-                    {
-                        Console.Write("请输入一个十进制数：");
-                        var shijizhi = Convert.ToInt32(Console.ReadLine());
-                        shizhuaner(shijizhi);
-                        Console.Write(" 从右往左读");
-                        Console.WriteLine();
-                    }
-                    break;
-                case 3:
-
-                    while (true)
-                    {
-                        Console.Write("请输入一个二进制数：");
-                        var shijizhi = Console.ReadLine();
-                        erzhuanba(shijizhi);
-                        Console.WriteLine();
-                    }
-                    break;
-                case 4:
-
-                    while (true)
-                    {
-                        Console.Write("请输入一个八进制数：");
-                        var bajinzhi = Console.ReadLine();
-                        bazhuaner(bajinzhi);
-                        Console.WriteLine();
-                    }
-                    break;
-                case 5:
-
-                    while (true)
-                    {
-                        Console.Write("请输入一个十进制数：");
-                        var shijinzhi = Console.ReadLine();
-                        shizhuanba(shijinzhi);
-                        Console.WriteLine();
-                    }
-                    break;
-                case 6:
-
-                    while (true)
-                    {
-                        Console.Write("请输入一个八进制数：");
-                        var bajinzhi = Console.ReadLine();
-                        bazhuanshi(bajinzhi);
-                        Console.WriteLine();
-                    }
-                    break;
-                case 7:
-
-                    while (true)
-                    {
-                        Console.Write("请输入一个二进制数：");
-                        var erjinzhi = Console.ReadLine();
-                        erzhuanshiliu(erjinzhi);
-                        Console.WriteLine();
-                    }
-                    break;
-                case 8:
-
-                    while (true)
-                    {
-                        Console.Write("请输入一个十六进制数：");
-                        var erjinzhi = Console.ReadLine();
-                        erzhuanshiliu(erjinzhi);
-                        Console.WriteLine();
-                    }
-                    break;
-                default:
-                    Console.Write("结束");
-                    break;
-            }
-
-
-
+            ScaleMian();
 
 
 
@@ -369,10 +271,177 @@ namespace Shi.App
 
         #region 进制转换
 
+
+        #region 进制转换入口
+
+
+        public static void ScaleMian()
+        {
+
+            Console.WriteLine("");
+            Console.WriteLine(" * * * * * * * * * * * * * * * * *");
+            Console.WriteLine("请选择要使用的功能:");
+            Console.WriteLine("- - - - - - - - - - - - - - - - - - -");
+            Console.WriteLine("");
+            Console.WriteLine("1、二进制转十进制");
+            Console.WriteLine("2、十进制转二进制");
+            Console.WriteLine("3、二进制转八进制");
+            Console.WriteLine("4、八进制转二进制");
+            Console.WriteLine("5、十进制转八进制");
+            Console.WriteLine("6、八进制转十进制");
+            Console.WriteLine("7、二进制转十六进制");
+            Console.WriteLine("8、十六进制转二进制");
+            Console.WriteLine("");
+            Console.WriteLine("- - - - - - - - - - - - - - - - - - -");
+            Console.WriteLine("");
+
+            Console.Write("我选择：");
+            var states = Console.ReadLine();
+
+            states = states.ToUpper();
+
+            switch (states)
+            {
+                case "1":
+                    while (true)
+                    {
+                        Console.Write("请输入一个二进制数：");
+                        var erjinzhi = Console.ReadLine();
+                        Map(erjinzhi);
+                        erzhuanshi(erjinzhi);
+                        Console.WriteLine("");
+                    }
+                    break;
+                case "2":
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个十进制数：");
+                        var shijizhi = Console.ReadLine();
+                        Map(shijizhi);
+                        shizhuaner_(shijizhi);
+                        //Console.Write(" 从右往左读");
+                        Console.WriteLine("");
+                    }
+                    break;
+                case "3":
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个二进制数：");
+                        var shijizhi = Console.ReadLine();
+                        Map(shijizhi);
+                        erzhuanba(shijizhi);
+                        Console.WriteLine("");
+                    }
+                    break;
+                case "4":
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个八进制数：");
+                        var bajinzhi = Console.ReadLine();
+                        Map(bajinzhi);
+                        bazhuaner(bajinzhi);
+                        Console.WriteLine("");
+                    }
+                    break;
+                case "5":
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个十进制数：");
+                        var shijinzhi = Console.ReadLine();
+                        Map(shijinzhi);
+                        shizhuanba(shijinzhi);
+                        Console.WriteLine("");
+                    }
+                    break;
+                case "6":
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个八进制数：");
+                        var bajinzhi = Console.ReadLine();
+                        Map(bajinzhi);
+                        bazhuanshi(bajinzhi);
+                        Console.WriteLine("");
+                    }
+                    break;
+                case "7":
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个二进制数：");
+                        var erjinzhi = Console.ReadLine();
+                        Map(erjinzhi);
+                        erzhuanshiliu(erjinzhi);
+                        Console.WriteLine("");
+                    }
+                    break;
+                case "8":
+
+                    while (true)
+                    {
+                        Console.Write("请输入一个十六进制数：");
+                        var shiliujinzhi = Console.ReadLine();
+                        Map(shiliujinzhi);
+                        shiliuzhuaner(shiliujinzhi);
+                        Console.WriteLine("");
+                    }
+                    break;
+
+
+                case "EXIT":
+                    System.Environment.Exit(0);
+                    break;
+                case "BACK":
+                    ScaleMian();
+                    break;
+                default:
+                    Console.WriteLine("");
+                    Console.Write("***输出错误，请重新输入***");
+                    Console.WriteLine("");
+                    ScaleMian();
+                    break;
+            }
+        }
+
+
+
+        public static string Map(string serch)
+        {
+
+            serch = serch.ToUpper();
+
+            switch (serch)
+            {
+                case "EXIT":
+                    System.Environment.Exit(0);
+                    return serch;
+                    break;
+                case "BACK":
+                    ScaleMian();
+                    return serch;
+                    break;
+                default:
+                    return serch;
+                    break;
+            }
+
+
+        }
+
+        #endregion
+
+
+
+
+
         #region 十&二
 
         /// <summary>
-        /// 十进制转二进制
+        /// 十进制转二进制 递归 但是得到的结果需要翻转过来看
         /// </summary>
         /// <param name="shijinzhi">十进制数</param>
         /// <returns></returns>
@@ -389,6 +458,27 @@ namespace Shi.App
             Console.Write(a);
 
             return shizhuaner(b);
+        }
+
+        /// <summary>
+        /// 十进制转二进制 循环
+        /// </summary>
+        /// <param name="shijinzhi">十进制数</param>
+        /// <returns></returns>
+        public static void shizhuaner_(string shijinzhi)
+        {
+            var numbe = Convert.ToInt32(shijinzhi);
+            var result = "";
+
+            while (numbe > 0)
+            {
+                var a = numbe % 2; // 模，取余数
+                numbe = numbe / 2; // 除，取剩余数
+
+                result = a + result;
+            }
+
+            Console.WriteLine($"十进制转换二进制的结果为：{result}");
         }
 
         /// <summary>
@@ -411,7 +501,7 @@ namespace Shi.App
                 result += erjin * rrr;
             }
 
-            Console.WriteLine(result);
+            Console.WriteLine($"二进制转换十进制的结果为：{result}");
         }
 
         #endregion
@@ -567,22 +657,60 @@ namespace Shi.App
                     mark += Convert.ToInt32(aa[i].ToString()) * Math.Pow(2, i);
                 }
 
-                result = shiliu(mark) + result;
+                result = shiliuzim(mark) + result;
             }
             Console.WriteLine($"二进制转十六进制结果为：{result}");
         }
 
+        /// <summary>
+        /// 十六进制转二进制
+        /// ************
+        /// 将十六进制数拆分开，每个数字使用除二取余法，将余数从后往前拼接，拼够四个数字，不够的补零
+        /// 把十六进制每个数字计算出的二进制拼接起来，得到二进制数
+        /// *************
+        /// </summary>
+        /// <param name="shiliujinzhi"></param>
+        public static void shiliuzhuaner(string shiliujinzhi)
+        {
+            var arr = shiliujinzhi.ToArray();
 
+            var result = "";
+            for (int i = arr.Length - 1; i >= 0; i--)
+            {
+                var item = arr[i].ToString();
+                var a = shiliushuzi(item);
 
+                var mark = "";
+                while (a > 0)
+                {
+                    var b = a % 2;
+                    a = a / 2;
+                    mark = b + mark;
+                }
+                if (mark.Length < 4)
+                {
+                    mark = mark.PadLeft(4, '0');
+                }
+
+                result = mark + result;
+            }
+
+            while (result.StartsWith('0'))
+            {
+                result = result.Remove(0, 1);
+            }
+
+            Console.WriteLine($"十六进制转二进制的结果为：{result}");
+        }
 
 
 
         /// <summary>
-        /// 十六进制10--15项的字母
+        /// 十六进制10--15项为字母
         /// </summary>
         /// <param name="shil"></param>
         /// <returns></returns>
-        public static string shiliu(double shil)
+        public static string shiliuzim(double shil)
         {
             switch (shil)
             {
@@ -593,6 +721,20 @@ namespace Shi.App
                 case 14: return "E";
                 case 15: return "F";
                 default: return shil.ToString();
+            }
+        }
+        public static int shiliushuzi(string shil)
+        {
+            shil = shil.ToUpper();
+            switch (shil)
+            {
+                case "A": return 10;
+                case "B": return 11;
+                case "C": return 12;
+                case "D": return 13;
+                case "E": return 14;
+                case "F": return 15;
+                default: return Convert.ToInt32(shil);
             }
         }
 
