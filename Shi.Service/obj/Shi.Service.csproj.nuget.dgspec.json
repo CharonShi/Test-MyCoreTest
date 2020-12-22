@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Hi\\MyCore\\Shi.Service\\Shi.Service.csproj": {}
+    "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Service\\Shi.Service.csproj": {}
   },
   "projects": {
-    "E:\\Hi\\MyCore\\Shi.Comm\\Shi.Comm.csproj": {
+    "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Comm\\Shi.Comm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hi\\MyCore\\Shi.Comm\\Shi.Comm.csproj",
+        "projectUniqueName": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Comm\\Shi.Comm.csproj",
         "projectName": "Shi.Comm",
-        "projectPath": "E:\\Hi\\MyCore\\Shi.Comm\\Shi.Comm.csproj",
+        "projectPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Comm\\Shi.Comm.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Hi\\MyCore\\Shi.Comm\\obj\\",
+        "outputPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Comm\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,10 +22,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\浏览器下载": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +39,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Dapper": {
               "target": "Package",
@@ -93,18 +96,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Hi\\MyCore\\Shi.IRepository\\Shi.IRepository.csproj": {
+    "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.IRepository\\Shi.IRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hi\\MyCore\\Shi.IRepository\\Shi.IRepository.csproj",
+        "projectUniqueName": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.IRepository\\Shi.IRepository.csproj",
         "projectName": "Shi.IRepository",
-        "projectPath": "E:\\Hi\\MyCore\\Shi.IRepository\\Shi.IRepository.csproj",
+        "projectPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.IRepository\\Shi.IRepository.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Hi\\MyCore\\Shi.IRepository\\obj\\",
+        "outputPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.IRepository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -115,13 +118,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\浏览器下载": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\Hi\\MyCore\\Shi.Models\\Shi.Models.csproj": {
-                "projectPath": "E:\\Hi\\MyCore\\Shi.Models\\Shi.Models.csproj"
+              "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Models\\Shi.Models.csproj": {
+                "projectPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Models\\Shi.Models.csproj"
               }
             }
           }
@@ -134,6 +139,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "DapperExtensions.NetCore": {
               "target": "Package",
@@ -158,18 +164,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Hi\\MyCore\\Shi.Models\\Shi.Models.csproj": {
+    "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Models\\Shi.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hi\\MyCore\\Shi.Models\\Shi.Models.csproj",
+        "projectUniqueName": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Models\\Shi.Models.csproj",
         "projectName": "Shi.Models",
-        "projectPath": "E:\\Hi\\MyCore\\Shi.Models\\Shi.Models.csproj",
+        "projectPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Models\\Shi.Models.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Hi\\MyCore\\Shi.Models\\obj\\",
+        "outputPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -180,13 +186,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\浏览器下载": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\Hi\\MyCore\\Shi.Comm\\Shi.Comm.csproj": {
-                "projectPath": "E:\\Hi\\MyCore\\Shi.Comm\\Shi.Comm.csproj"
+              "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Comm\\Shi.Comm.csproj": {
+                "projectPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Comm\\Shi.Comm.csproj"
               }
             }
           }
@@ -199,6 +207,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Dapper": {
               "target": "Package",
@@ -231,18 +240,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Hi\\MyCore\\Shi.Repository\\Shi.Repository.csproj": {
+    "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Repository\\Shi.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hi\\MyCore\\Shi.Repository\\Shi.Repository.csproj",
+        "projectUniqueName": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Repository\\Shi.Repository.csproj",
         "projectName": "Shi.Repository",
-        "projectPath": "E:\\Hi\\MyCore\\Shi.Repository\\Shi.Repository.csproj",
+        "projectPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Repository\\Shi.Repository.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Hi\\MyCore\\Shi.Repository\\obj\\",
+        "outputPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -253,16 +262,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\浏览器下载": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\Hi\\MyCore\\Shi.Comm\\Shi.Comm.csproj": {
-                "projectPath": "E:\\Hi\\MyCore\\Shi.Comm\\Shi.Comm.csproj"
+              "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Comm\\Shi.Comm.csproj": {
+                "projectPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Comm\\Shi.Comm.csproj"
               },
-              "E:\\Hi\\MyCore\\Shi.IRepository\\Shi.IRepository.csproj": {
-                "projectPath": "E:\\Hi\\MyCore\\Shi.IRepository\\Shi.IRepository.csproj"
+              "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.IRepository\\Shi.IRepository.csproj": {
+                "projectPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.IRepository\\Shi.IRepository.csproj"
               }
             }
           }
@@ -275,6 +286,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Dapper": {
               "target": "Package",
@@ -311,18 +323,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Hi\\MyCore\\Shi.Service\\Shi.Service.csproj": {
+    "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Service\\Shi.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hi\\MyCore\\Shi.Service\\Shi.Service.csproj",
+        "projectUniqueName": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Service\\Shi.Service.csproj",
         "projectName": "Shi.Service",
-        "projectPath": "E:\\Hi\\MyCore\\Shi.Service\\Shi.Service.csproj",
+        "projectPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Service\\Shi.Service.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Hi\\MyCore\\Shi.Service\\obj\\",
+        "outputPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -333,16 +345,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\浏览器下载": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\Hi\\MyCore\\Shi.Models\\Shi.Models.csproj": {
-                "projectPath": "E:\\Hi\\MyCore\\Shi.Models\\Shi.Models.csproj"
+              "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Models\\Shi.Models.csproj": {
+                "projectPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Models\\Shi.Models.csproj"
               },
-              "E:\\Hi\\MyCore\\Shi.Repository\\Shi.Repository.csproj": {
-                "projectPath": "E:\\Hi\\MyCore\\Shi.Repository\\Shi.Repository.csproj"
+              "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Repository\\Shi.Repository.csproj": {
+                "projectPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Repository\\Shi.Repository.csproj"
               }
             }
           }
@@ -355,6 +369,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -383,7 +398,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

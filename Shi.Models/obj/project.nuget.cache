@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Izx4taz/cOpgOKbGh2mI3jg85e+PcO2AJBCRljd6bTLTMfFGpYCQvtCahtqa74rTX8IEogRg7Rv4mENULrkBdA==",
+  "dgSpecHash": "x5nkt64Y6Q8ktS387UAU5SHa+idBajGRdUtw6F/r1rM+A9FelekAJkOzvEAt4+vlos86FbV83gRo32Kt/iG0aQ==",
   "success": true,
-  "projectFilePath": "E:\\Hi\\MyCore\\Shi.Models\\Shi.Models.csproj",
+  "projectFilePath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Models\\Shi.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",

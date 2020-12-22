@@ -11,7 +11,7 @@ namespace Shi.App
     {
         static async Task Main(string[] args)
         {
-            //ThreadTest(); // 线程练习
+            ThreadTest(); // 线程练习
 
 
             //异步练习
@@ -31,8 +31,8 @@ namespace Shi.App
             //new Thread(new ThreadStart(ShowNowStatu)).Start();
 
 
-
-            ScaleMian();
+            //进制转换
+            //ScaleMian();
 
 
 
@@ -55,6 +55,8 @@ namespace Shi.App
 
         #region 线程练习
 
+        static object locker = new object();
+        static long mark = 0;
 
         static async Task ThreadTest()
         {
@@ -71,7 +73,8 @@ namespace Shi.App
             {
                 Thread.Sleep(1000);//将线程挂起指定时间（阻塞）  整个线程都会等待
                 slee += 1;
-                Console.WriteLine($"第一个方法：第{slee}秒");
+                //Console.WriteLine($"第一个方法：第{slee}秒");
+                consoleWrite($" 第一个方法：mark:{mark}");
             }
         }
 
@@ -82,9 +85,21 @@ namespace Shi.App
             {
                 Thread.Sleep(2000);
                 slee += 2;
-                Console.WriteLine($"第二个方法：第{slee}秒");
+                // Console.WriteLine($"第二个方法：第{slee}秒");
+                consoleWrite($"第二个方法：mark:{mark}");
             }
         }
+
+        static void consoleWrite(string content)
+        {
+            lock (locker)
+            {
+                mark++;
+                Console.WriteLine(content);
+            }
+        }
+
+
 
         #endregion
 
@@ -100,8 +115,6 @@ namespace Shi.App
 
 
         #endregion
-
-
 
 
         #region 定时任务练习

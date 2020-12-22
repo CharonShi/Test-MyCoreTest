@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OjGWlE9BL3Ta6M+Yaq+i07fgODk9F3PKtO862ORfzFqt9FNsBZh/TwnecBhCMe8NElOryBYvyy2jTFWU0H2s4g==",
+  "dgSpecHash": "xHC6owWi26+d9YU8qrCBkrDCORFOxVZ43xSD4iWS5f8prQnW4r7paESXhQ0CjQr2kHlBRoJhPkWyWluhQrseNg==",
   "success": true,
-  "projectFilePath": "E:\\Hi\\MyCore\\Shi.UTest\\Shi.UTest.csproj",
+  "projectFilePath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.UTest\\Shi.UTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

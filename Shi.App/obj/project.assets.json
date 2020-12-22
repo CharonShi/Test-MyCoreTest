@@ -7680,11 +7680,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Hi\\MyCore\\Shi.App\\Shi.App.csproj",
+      "projectUniqueName": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.App\\Shi.App.csproj",
       "projectName": "Shi.App",
-      "projectPath": "E:\\Hi\\MyCore\\Shi.App\\Shi.App.csproj",
+      "projectPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.App\\Shi.App.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\Hi\\MyCore\\Shi.App\\obj\\",
+      "outputPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7695,13 +7695,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\浏览器下载": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\Hi\\MyCore\\Shi.Service\\Shi.Service.csproj": {
-              "projectPath": "E:\\Hi\\MyCore\\Shi.Service\\Shi.Service.csproj"
+            "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Service\\Shi.Service.csproj": {
+              "projectPath": "E:\\Hi\\GitProject\\MyCoreTest\\Test-MyCoreTest\\Shi.Service\\Shi.Service.csproj"
             }
           }
         }
@@ -7714,6 +7716,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "System.Diagnostics.PerformanceCounter": {
             "target": "Package",
@@ -7738,7 +7741,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
