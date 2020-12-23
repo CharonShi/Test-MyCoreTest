@@ -1,0 +1,12 @@
+E:\Hi\GitProject\MyCoreTest\Test-MyCoreTest\Shi.Comm\bin\Debug\net5.0\Shi.Comm.deps.json
+E:\Hi\GitProject\MyCoreTest\Test-MyCoreTest\Shi.Comm\bin\Debug\net5.0\Shi.Comm.dll
+E:\Hi\GitProject\MyCoreTest\Test-MyCoreTest\Shi.Comm\bin\Debug\net5.0\ref\Shi.Comm.dll
+E:\Hi\GitProject\MyCoreTest\Test-MyCoreTest\Shi.Comm\bin\Debug\net5.0\Shi.Comm.pdb
+E:\Hi\GitProject\MyCoreTest\Test-MyCoreTest\Shi.Comm\obj\Debug\net5.0\Shi.Comm.csprojAssemblyReference.cache
+E:\Hi\GitProject\MyCoreTest\Test-MyCoreTest\Shi.Comm\obj\Debug\net5.0\Shi.Comm.GeneratedMSBuildEditorConfig.editorconfig
+E:\Hi\GitProject\MyCoreTest\Test-MyCoreTest\Shi.Comm\obj\Debug\net5.0\Shi.Comm.AssemblyInfoInputs.cache
+E:\Hi\GitProject\MyCoreTest\Test-MyCoreTest\Shi.Comm\obj\Debug\net5.0\Shi.Comm.AssemblyInfo.cs
+E:\Hi\GitProject\MyCoreTest\Test-MyCoreTest\Shi.Comm\obj\Debug\net5.0\Shi.Comm.csproj.CoreCompileInputs.cache
+E:\Hi\GitProject\MyCoreTest\Test-MyCoreTest\Shi.Comm\obj\Debug\net5.0\Shi.Comm.dll
+E:\Hi\GitProject\MyCoreTest\Test-MyCoreTest\Shi.Comm\obj\Debug\net5.0\ref\Shi.Comm.dll
+E:\Hi\GitProject\MyCoreTest\Test-MyCoreTest\Shi.Comm\obj\Debug\net5.0\Shi.Comm.pdb

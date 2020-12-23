@@ -73,8 +73,8 @@ namespace Shi.App
             {
                 Thread.Sleep(1000);//将线程挂起指定时间（阻塞）  整个线程都会等待
                 slee += 1;
-                //Console.WriteLine($"第一个方法：第{slee}秒");
-                consoleWrite($" 第一个方法：mark:{mark}");
+                Console.WriteLine($"第一个方法：第{slee}秒");
+                //consoleWrite($" 第一个方法：mark:{mark}");
             }
         }
 
@@ -85,10 +85,11 @@ namespace Shi.App
             {
                 Thread.Sleep(2000);
                 slee += 2;
-                // Console.WriteLine($"第二个方法：第{slee}秒");
-                consoleWrite($"第二个方法：mark:{mark}");
+                Console.WriteLine($"第二个方法：第{slee}秒");
+                //consoleWrite($"第二个方法：mark:{mark}");
             }
         }
+
 
         static void consoleWrite(string content)
         {
